@@ -1,13 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+ruby:
+  title: Programming Ruby 1.9
+  description:
+     Ruby is the fastest growing and most exciting dynamic
+     language out there. If you need to get working programs
+     delivered fast, you should add Ruby to your toolbox.
+  price: 49.50
+  image_url: ruby.jpg
 
-two:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+rails:
+  title: Learing Ruby On Rails
+  description:
+       Its all about learning to develop a web application using Rails framework. Everything upto now is neat and tidy!
+  price: 69.50
+  image_url: rails.jpg
