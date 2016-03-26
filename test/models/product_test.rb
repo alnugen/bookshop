@@ -65,6 +65,7 @@ class ProductTest < ActiveSupport::TestCase
     assert product.invalid?
     assert_equal ["has already been taken"], product.errors[:title]
   end
+
   test "product is not valid without a unique title - i18n" do
     product = Product.new(title:
                           products(:ruby).title,
@@ -76,6 +77,20 @@ class ProductTest < ActiveSupport::TestCase
     assert product.invalid?
     assert_equal [I18n.translate('errors.messages.taken')],
       product.errors[:title]
+  end
+
+  test "product is not valid with title length less than 10" do
+  	product = Product.new(
+                          description: "yyy",
+                          price:
+                          1,
+                          image_url:
+                          "fred.gif")
+  	product.title = "Test"
+  	assert product.invalid?
+  	assert_equal ["length must be greater than 10"],
+  	product.errors[:title]
+
   end
 
 end
