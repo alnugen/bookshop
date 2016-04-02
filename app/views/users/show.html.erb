@@ -1,9 +1,8 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
+<p class="label">
+	<strong>Name:</strong>
+	<%= @user.name %>
 </p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<p class="bottom_link">
+	<%= link_to 'Edit', edit_user_path(@user), class:"link_to_edit" %> |
+	<%= link_to 'Back', users_path, class:"link_to_user" %>
+</p>

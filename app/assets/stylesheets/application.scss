@@ -42,7 +42,6 @@
 }
 
 #columns {
-    background: #f0f0f0;
     #main {
         margin-left: 17em;
         padding: 1em;
@@ -62,30 +61,47 @@
         input {
             font-size: small;
         }
-        #cart {
+
+        /* END_HIGHLIGHT */
+        ul {
+            padding: 0;
+            li {
+                list-style: none;
+                margin: 2px;
+                padding: 2px;
+                a {
+                    font-family: sans-serif;
+                    color: #bfb;
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+            }
+        }
+        .btn_logout{
+            background-color: #f44336;         /* Red */
+            border: none;
+            color: white;
+            padding: 5px 8px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            width: 100%;
+            border: none;
+        }
+    }
+    //#END:side
+}
+  #cart {
             font-size: smaller;
             color: black;
             table {
                 border-top: 1px dotted #595;
                 border-bottom: 1px dotted #595;
                 margin-bottom: 10px;
+                padding: 10px;
             }
         }
-        /* END_HIGHLIGHT */
-        ul {
-            padding: 0;
-            li {
-                list-style: none;
-                a {
-                    color: #bfb;
-                    font-size: small;
-                }
-            }
-        }
-    }
-    //#END:side
-}
-
 .depot_form {
     fieldset {
         background: #efe;
@@ -96,25 +112,5 @@
             padding: 0.2em 1em;
         }
     }
-    form {
-        label {
-            width: 5em;
-            float: left;
-            text-align: right;
-            padding-top: 0.2em;
-            margin-right: 0.1em;
-            display: block;
-        }
-        select,
-        textarea,
-        input {
-            margin-left: 0.5em;
-        }
-        .submit {
-            margin-left: 4em;
-        }
-        br {
-            display: none
-        }
-    }
+
 }

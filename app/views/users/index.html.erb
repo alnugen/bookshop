@@ -2,23 +2,24 @@
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @users.each do |user| %>
-    <tr>
-      <td><%= user.name %></td>
-      <td><%= link_to 'Show', user %></td>
-      <td><%= link_to 'Edit', edit_user_path(user) %></td>
-      <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
-<%= link_to 'New User', new_user_path %>
+<div style="overflow-x:auto;">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th colspan="3">Options</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td id="options"><%= link_to 'Show', user, class:"btn_show" %> <%= link_to 'Edit', edit_user_path(user), class:"btn_edit"%> <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' },class:"btn_delete" %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<p class="bottom_link">
+  <%= link_to 'New User', new_user_path, class:"btn_new_user" %>
+</p>

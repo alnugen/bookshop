@@ -49,6 +49,9 @@
             margin-right: 3em;
         }
     }
+    .entry:nth-child(even) {
+        background-color: #e2e2e2;
+    }
 }
 
 
