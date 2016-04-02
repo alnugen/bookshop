@@ -19,6 +19,12 @@
     display: block;
 }
 
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 #banner {
     background: #3b5998;
     padding: 10px;
@@ -61,7 +67,6 @@
         input {
             font-size: small;
         }
-
         /* END_HIGHLIGHT */
         ul {
             padding: 0;
@@ -77,8 +82,22 @@
                 }
             }
         }
-        .btn_logout{
-            background-color: #f44336;         /* Red */
+        .btn_logout {
+            background-color: #f44336;
+            /* Red */
+            border: none;
+            color: white;
+            padding: 5px 8px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            width: 100%;
+            border: none;
+        }
+        .btn_login {
+            background-color: #3b5998;
+            /* Red */
             border: none;
             color: white;
             padding: 5px 8px;
@@ -92,16 +111,18 @@
     }
     //#END:side
 }
-  #cart {
-            font-size: smaller;
-            color: black;
-            table {
-                border-top: 1px dotted #595;
-                border-bottom: 1px dotted #595;
-                margin-bottom: 10px;
-                padding: 10px;
-            }
-        }
+
+#cart {
+    font-size: smaller;
+    color: black;
+    table {
+        border-top: 1px dotted #595;
+        border-bottom: 1px dotted #595;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+}
+
 .depot_form {
     fieldset {
         background: #efe;
@@ -112,5 +133,111 @@
             padding: 0.2em 1em;
         }
     }
+}
 
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+    align: auto;
+}
+
+label {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+input[type=text],
+[type=password],
+[type=email],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.submit:hover {
+    background-color: #45a049;
+}
+
+td.options {
+    a {
+        text-decoration: none;
+        border: none;
+        color: black;
+        padding: 8px 16px;
+        display: inline-block;
+    }
+    .btn_show {
+        background-color: #8b9dc3;
+    }
+    .btn_edit {
+        background-color: #4099ff;
+    }
+    .btn_delete {
+        background-color: #f44336;
+    }
+}
+
+tr:nth-child(even) {
+    background-color: #e2e2e2
+}
+
+th.show,
+td.show {
+    text-align: left;
+    padding: 8px;
+    font-family: sans-serif;
+    font-size: 14px;
+    background: #e2e2e2;
+    color: black;
+}
+
+p.bottom_link {
+    margin-top: 30px;
+    a,a:hover {
+        text-decoration: none;
+        font-family: "Times New Roman";
+        font-weight: bold;
+        font-size: 16px;
+
+    }
+
+    a.btn_new_user:link,
+    a.btn_new_user:visited,
+    a.btn_new_order:link,
+    a.btn_new_order:visited,
+    a.btn_new_product:link,
+    a.btn_new_product:visited {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+    }
 }

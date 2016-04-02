@@ -14,7 +14,7 @@
       <% @users.each do |user| %>
       <tr>
         <td><%= user.name %></td>
-        <td id="options"><%= link_to 'Show', user, class:"btn_show" %> <%= link_to 'Edit', edit_user_path(user), class:"btn_edit"%> <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' },class:"btn_delete" %></td>
+        <td class="options"><%= link_to 'Show', user, class:"btn_show" %> <%= link_to 'Edit', edit_user_path(user), class:"btn_edit"%> <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' },class:"btn_delete" %></td>
       </tr>
       <% end %>
     </tbody>
